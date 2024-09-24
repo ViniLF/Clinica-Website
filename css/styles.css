@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f1dcdc;
+    color: #333; /* Cor do texto padrão */
+}
+
+h1, h2, h3 {
+    color: #b71f58; /* Cor dos títulos */
+}
+
+h4, h5, h6 {
+    color: #bf4e7a; /* Cor dos subtítulos */
+}
+
+p {
+    color: #333; /* Cor do texto padrão */
+}
+
+/* Modo Escuro */
+body.dark-theme {
+    background-color: #1e1e1e;
+    color: #fff; /* Cor do texto em modo escuro */
+}
+
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3 {
+    color: #b71f58; /* Cor dos títulos no modo escuro */
+}
+
+body.dark-theme h4, body.dark-theme h5, body.dark-theme h6 {
+    color: #bf4e7a; /* Cor dos subtítulos no modo escuro */
+}
+
+body.dark-theme p {
+    color: #ccc; /* Texto mais claro para maior contraste no modo escuro */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    color: #b71f58;
+    padding: 1rem 0;
+}
+
+.logo img {
+    height: auto;
+    width: 150px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #b71f58;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-toggle img {
+    width: 24px; /* Ajuste conforme necessário */
+    height: 24px; /* Ajuste conforme necessário */
+    vertical-align: middle;
+}
+
+#home {
+    background: url('images/clinica.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#home h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#services, #testimonials, #contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services-grid, .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service, .testimonial {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #b71f58;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #b71f58;
+    color: fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}

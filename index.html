@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clínica de Estética</title>
+    <link rel="icon" href="images/Vilari-favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-normal.svg" alt="Logo Vilari Estética">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="theme-toggle">
+            <img src="images/brightness-high-fill.svg" alt="Alternar para modo noturno" id="theme-icon">
+        </button>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Bem-vindo à Clínica de Estética</h2>
+            <p>Oferecemos tratamentos faciais e corporais para deixar você ainda mais bonita!</p>
+            <a href="#services" class="btn">Conheça nossos serviços</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Tratamento Facial</h3>
+                    <p>Cuide da sua pele com nossos tratamentos faciais personalizados.</p>
+                </div>
+                <div class="service">
+                    <h3>Massagem Relaxante</h3>
+                    <p>Relaxe e renove suas energias com nossas massagens.</p>
+                </div>
+                <div class="service">
+                    <h3>Depilação a Laser</h3>
+                    <p>Conquiste uma pele lisa e sem pelos com a depilação a laser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"A clínica transformou minha pele, o atendimento é excelente!"</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Adoro a massagem relaxante, saio renovada toda vez."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Profissionais incríveis, resultados excelentes!"</p>
+                    <span>- Cliente 3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <textarea id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clínica de Estética - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Botão de alternância de tema -->
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
