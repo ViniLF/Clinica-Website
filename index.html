@@ -10,37 +10,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
+        <div class="headerContainer">
+            <a href="index.html" class="logo">
                 <img src="images/logo-normal.svg" alt="Logo Vilari Estética">
-            </div>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#" class="active">Agende já</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
+                <button class="theme-toggle">
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </button>
             </nav>
         </div>
-        <button class="theme-toggle">
-            <img src="images/brightness-high-fill.svg" alt="Alternar para modo noturno" id="theme-icon">
-        </button>
     </header>
 
     <section id="home">
-        <div class="container">
-            <h2>Bem-vindo à Clínica de Estética</h2>
-            <p>Oferecemos tratamentos faciais e corporais para deixar você ainda mais bonita!</p>
-            <a href="#services" class="btn">Conheça nossos serviços</a>
+        <div class="home-content">
+            <h2 class="home-title">Cuidando da Sua Saúde com Excelência</h2>
+            <p class="home-description">
+                Na nossa clínica, oferecemos um atendimento humanizado e de qualidade, focando no bem-estar de cada paciente. Nossa equipe está preparada para atender suas necessidades com cuidado e dedicação.
+            </p>
         </div>
+        <aside class="home-image">
+            <img src="images/capa-estetica.jpg" alt="Imagem da Clínica" />
+        </aside>
     </section>
 
     <section id="services">
-        <div class="container">
+        <div class="services-container">
             <h2>Nossos Serviços</h2>
             <div class="services-grid">
                 <div class="service">
@@ -60,7 +65,7 @@
     </section>
 
     <section id="testimonials">
-        <div class="container">
+        <div class="testimonials-container">
             <h2>Depoimentos</h2>
             <div class="testimonials-grid">
                 <div class="testimonial">
@@ -80,7 +85,7 @@
     </section>
 
     <section id="contact">
-        <div class="container">
+        <div class="contact-container">
             <h2>Entre em Contato</h2>
             <form id="contact-form">
                 <input type="text" id="name" placeholder="Nome" required>
@@ -92,13 +97,10 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Clínica de Estética - Todos os direitos reservados</p>
+        <div class="footer-container">
+            <p>&copy; 2024 Vilari Clínica de Estética - Todos os direitos reservados</p>
         </div>
     </footer>
-
-    <!-- Botão de alternância de tema -->
-    
 
     <script src="js/main.js"></script>
 </body>
